@@ -1,0 +1,29 @@
+@media print {
+	@page {
+		margin: 2cm;
+	}
+	*, *:before, *:after {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	a, a:visited {
+		text-decoration: underline;
+	}
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	a[href^="#"]:after, a[href^="javascript:"]:after {
+		content: "";
+	}
+	tr, ul, img {
+		page-break-inside: avoid;
+	}
+	#amb_photo, #footer {
+		display: none;
+	}
+}

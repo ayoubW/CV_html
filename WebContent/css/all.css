@@ -1,0 +1,94 @@
+@CHARSET "UTF-8";
+
+@import "compass/css3";
+/*
+---------------------------------------------------------------------------------
+	RESUME TEMPLATE
+    html resume
+
+    v0.0: 22/10/2016
+
+    design and code by: Marta Costa
+---------------------------------------------------------------------------------
+*/
+html {
+	background: #f3f3f3;
+}
+
+body {
+	background: white;
+	box-shadow: 0 0 40px silver;
+	margin: auto;
+	border: 2px;
+	max-width: 800px;
+	min-width: 300px;
+	padding: 30px;
+	font-family: Georgia;
+	font-size: 16px;
+	color: #333;
+	word-spacing:2px;
+	line-height: 145%;
+}
+
+/*article {
+	height: 1880px;
+}*/
+
+header {
+	position: relative;
+	height: 150px;
+	padding: 20px;
+	background: linear-gradient(rgba(400, 400, 400, 400),
+		rgba(230, 230, 230, 230));
+	border-radius: 10px;
+	margin-bottom: 20px;
+	height: 150px;
+}
+
+img {
+	float: left;
+	margin: 10px;
+}
+
+hgroup {
+	float: left;
+	position: relative;
+	left: 100px;
+	text-align: center;
+}
+
+#PersonalInfo {
+	text-align: right;
+	font-size: 14px;
+}
+
+h1, h2, h3 {
+	color: #0000a0;
+	max-width:500px;
+}
+
+section {
+	border-bottom: 1px solid silver;
+}
+
+
+
+p, ul{
+	font-size: 14px;	
+}
+
+section > h2 {
+	width: 300px;
+	margin-right: 10px;
+	display: inline-block;
+}
+.h2_detail {
+	max-width: 470px;
+	display: inline-block;
+}
+footer {
+	text-align: center;
+	background: silver;
+	height: 30px;
+	padding: 5px;
+}
