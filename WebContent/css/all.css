@@ -25,14 +25,13 @@ body {
 	font-family: Georgia;
 	font-size: 16px;
 	color: #333;
-	word-spacing:2px;
+	word-spacing: 2px;
 	line-height: 145%;
 }
 
 /*article {
 	height: 1880px;
 }*/
-
 header {
 	position: relative;
 	height: 150px;
@@ -63,29 +62,49 @@ hgroup {
 
 h1, h2, h3 {
 	color: #0000a0;
-	max-width:500px;
+	max-width: 500px;
 }
 
 section {
 	border-bottom: 1px solid silver;
-	position:relative;
+	position: relative;
 }
 
-
-
-p, ul{
-	font-size: 14px;	
+p, ul {
+	font-size: 14px;
 }
 
-section > h2 {
+section>h2 {
 	width: 300px;
 	margin-right: 10px;
 	display: inline-block;
+	vertical-align: top;
 }
+
 .h2_detail {
 	max-width: 470px;
 	display: inline-block;
 }
+
+.title_header {
+	width: auto;
+	/* 	display: inline-block; */
+}
+
+.title_name {
+	color: #0000a0;
+	display: inline-block;
+	/* 		float: left; */
+}
+
+.title_date {
+	font-size: 12px;
+	display: inline-block;
+	position: relative;
+	left: 200px;
+	text-align: right;
+}
+
 footer {
 	text-align: center;
 	background: silver;
