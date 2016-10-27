@@ -1,6 +1,4 @@
 @CHARSET "UTF-8";
-
-@import "compass/css3";
 /*
 ---------------------------------------------------------------------------------
 	RESUME TEMPLATE
@@ -24,16 +22,15 @@ body {
 	padding: 30px;
 	font-family: Georgia;
 	font-size: 16px;
-	color: #333;
+/* 	color: #333; */
 	word-spacing: 2px;
 	line-height: 145%;
 }
 
-/*article {
-	height: 1880px;
-}*/
+/* article { */
+/* 	height: 1880px; */
+/* } */
 header {
-	position: relative;
 	height: 150px;
 	padding: 20px;
 	background: linear-gradient(rgba(400, 400, 400, 400),
@@ -41,73 +38,113 @@ header {
 	border-radius: 10px;
 	margin-bottom: 20px;
 	height: 150px;
+	position: relative;
+}
+
+a, a:visited, a:link {
+	text-decoration: none;
+	color: #0000ca;
+}
+
+a:hover, a:active {
+	color: #aa0000;
 }
 
 img {
-	float: left;
 	margin: 10px;
 }
 
 hgroup {
-	float: left;
-	position: relative;
-	left: 100px;
-	text-align: center;
+	margin: 20px;
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	right: 300px;
+	text-align:center;
 }
 
 #PersonalInfo {
 	text-align: right;
-	font-size: 14px;
+	font-size: 0.875em;
+	display: inline-block;
+	position: absolute;
+	right: 30px;
 }
 
 h1, h2, h3 {
 	color: #0000a0;
 	max-width: 500px;
+	margin-top: 0px;
 }
+h1{font-size: 2em;
+ma}
 
 section {
 	border-bottom: 1px solid silver;
 	position: relative;
+	padding: 10px;
 }
 
 p, ul {
-	font-size: 14px;
+	font-size: 0.875em;
 }
 
 section>h2 {
-	width: 300px;
+	width: 250px;
 	margin-right: 10px;
 	display: inline-block;
 	vertical-align: top;
 }
 
+section:last-child {
+	border-bottom: none;
+}
+
 .h2_detail {
-	max-width: 470px;
+	max-width: 500px;
 	display: inline-block;
 }
 
 .title_header {
 	width: auto;
-	/* 	display: inline-block; */
+	position: relative;
 }
 
 .title_name {
 	color: #0000a0;
 	display: inline-block;
-	/* 		float: left; */
 }
 
 .title_date {
-	font-size: 12px;
+	font-size: 0.75em;
 	display: inline-block;
-	position: relative;
-	left: 200px;
+	font-weight: bold;
+	position: absolute;
+	right: 10px;
 	text-align: right;
+	vertical-align: text-bottom;
+}
+
+.position {
+	float: left;
+}
+
+footer p, footer img {
+	margin: 0 10px 0 10px;
+	font-size: 1.06em;
+}
+
+#footer {
+	position: absolute;
+	left: 200px;
 }
 
 footer {
-	text-align: center;
-	background: silver;
+	margin-top: 20px; text-align : center;
+	background: linear-gradient(rgba(400, 400, 400, 400),
+		rgba(230, 230, 230, 230));
 	height: 30px;
 	padding: 5px;
+	position: relative;
+	text-align: center;
 }
