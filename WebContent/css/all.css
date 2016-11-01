@@ -11,7 +11,6 @@
 */
 html {
 	background: #3e3e3e;
-	/* 			background: #f3f3f3; */
 }
 
 article {
@@ -35,6 +34,7 @@ header {
 	border-radius: 10px;
 	margin-bottom: 20px;
 	height: 150px;
+	padding: 10px;
 }
 
 header img {
@@ -43,15 +43,16 @@ header img {
 }
 
 #header_photo {
-	width: 33.3%;
+	width: 30%;
 	display: inline-block;
 }
 
 #info {
-	width: 64.5%;
-	display: inline-block;
-	vertical-align: top;
+	width: 70%;
+	float: right; 
+	vertical-align : top;
 	margin-top: 20px;
+	vertical-align: top;
 }
 
 #info p {
@@ -91,7 +92,6 @@ h1 {
 
 section {
 	border-bottom: 1px solid silver;
-	position: relative;
 	padding: 10px;
 }
 
@@ -105,8 +105,7 @@ section ul {
 }
 
 section>h2 {
-	width: 33.3%;
-	margin-right: 10px;
+	width: 30%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -116,8 +115,9 @@ section:last-of-type {
 }
 
 .h2_detail {
-	max-width: 64.5%;
+	max-width: 70%;
 	display: inline-block;
+	position:relative;
 }
 
 .title_name {
@@ -140,20 +140,23 @@ footer {
 		rgba(230, 230, 230, 230));
 	border-radius: 10px;
 }
-footer a:hover, footer a:active {
-	filter: brightness(1000%);
-}
+
 #footer {
 	margin: auto;
-	width: 24%;
+	width: 25%;
 }
 
 footer p {
 	display: inline-block;
 }
 
+
 #images_footer {
 	float: right;
-	margin-top:0.5em;
-	margin-bottom:0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+footer a:hover, footer a:active {
+	filter: brightness(1000%);
 }

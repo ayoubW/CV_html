@@ -1,6 +1,6 @@
-@media print { 
-	@article {
-/* 		margin: 3cm; */
+@media print { @
+	article {
+		margin: 3cm;
 		margin-top: 5cm;
 	}
 	*, *:before, *:after {
@@ -10,29 +10,26 @@
 		text-shadow: none !important;
 	}
 	a, a:visited {
-		text-decoration: underline;
+		text-decoration: none;
 	}
-
-	/* 	abbr[title]::after { */
-	/* 		content: " (" attr(title) ")"; */
-	/* 	} */
-	/* 	a[href^="#"]::after, a[href^="javascript:"]::after { */
-	/* 		content: ""; */
-	/* 	} */
 	ul, img, section {
 		page-break-inside: avoid;
+	}
+	#footer {
+		margin: auto;
+		width: 100%;
 	}
 	#footer img {
 		display: none;
 	}
 	#footer a {
 		display: block;
-		text-align: left;
 	}
 	#footer a[href]::before {
 		content: attr(title);
+		text-decoration: none;
 	}
-	#footer	a[href]:after {
-		content: " (" attr(href) ")";
+	#footer	a[href]::after {
+		content: " " attr(href);
 	}
 }
